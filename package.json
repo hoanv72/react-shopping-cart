@@ -1,11 +1,14 @@
 {
+  "homepage": "https://hoanv72.github.io/react-shopping-cart",
   "name": "demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +36,7 @@
     "core-js": "^3.6.5",
     "es6": "0.0.7",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
