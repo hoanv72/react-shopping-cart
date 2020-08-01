@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Pacifico&family=Righteous&family=Roboto:wght@100;300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+body{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+.app{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+section{
+	box-shadow: 0 0 5px #ccc;
+	padding: 15px 10px;
+}

@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Pacifico&family=Righteous&family=Roboto:wght@100;300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap);
+body{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+.app{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+section{
+	box-shadow: 0 0 5px #ccc;
+	padding: 15px 10px;
+}
+header{
+	min-height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+}
+header .logo a{
+	text-decoration: none;
+	color:black;
+}
+header nav{
+	display: flex;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #555;
+	padding: 0 15px;
+}
+nav ul li a:hover{
+	color: lightseagreen;
+}
+nav .nav-cart{
+	cursor: pointer;
+	position: relative;
+	margin-top: 13px;
+}
+nav .nav-cart span{
+	position: absolute;
+	top: -12px;
+	right: -7px;
+	color: white;
+	font-size: 10px;
+	padding: 3px 5px;
+	border-radius: 50%;
+	z-index: -1;
+	background: crimson;
+}
+header .menu, header .close{
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 650px) {
+	header ul{
+		position: fixed;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height:100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background: white;
+		z-index: 99;
+		opacity: 0.97;
+		transition: 0.5s linear;
+	}
+	header .close,
+	header .menu{
+		display: block;
+	}
+	header .close{
+		position: absolute;
+		top:10px;
+		left: 80%;
+	}
+	header ul.toggle{
+		top: 0;
+	}
+}
